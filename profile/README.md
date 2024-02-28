@@ -2,7 +2,8 @@
 ### 현대모비스 2024 Mobility SW HACKATHON 
 > **2024.01.18~2024.02.23**
 > 
-> 
+> Frontend [@jwo0o0](https://github.com/jwo0o0) Backend [@0woogie](https://github.com/0woogie) [@Seohyun Back](https://github.com/Seohyun-Back) Embedded[
+@byungjikim](https://github.com/byungjikim)
 
 ## 프로젝트 소개
 
