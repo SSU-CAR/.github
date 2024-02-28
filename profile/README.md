@@ -26,9 +26,22 @@ React Styled-Components AWS S3 Github action
 ### Back
 
 ### Embedded
-ROS
+![ROS2](https://img.shields.io/badge/ros-foxy-444444?style=for-the-badge&logo=ros)
+![Python](https://img.shields.io/badge/Python-444444?style=for-the-badge&logo=Python)
+![Docker](https://img.shields.io/badge/Docker-444444?style=for-the-badge&logo=Docker)
+![C++](https://img.shields.io/badge/C++-444444?style=for-the-badge&logo=c%2B%2B)
+![Python](https://img.shields.io/badge/Python-444444?style=for-the-badge&logo=Python)
 
 ## 상황 판단 알고리즘 구현
+#### Detail information in this link: [Here](https://github.com/SSU-CAR/SSU-CAR_Embeded)
+Monitor the driver's forward attention by pupil, head pose and phone detection.  
+Three evaluation factors - Closed eye detection, Head pose estimation, Phone detection    
+![image](https://github.com/SSU-CAR/SSU-CAR_Embeded/assets/107911398/3e5b8ff1-3ff0-49f1-a111-0ddbeedbca80)  
+Monitor the illegal lane change like changing in solid line and without direction light.  
 
+DrivenDist - Report driving distance and current veloicity.  
+Joystick_usb - Control RC car with joystick.  
+LaeDetection, lane_ex - Lane detetction with HSV(HSL) filtering.  
+![image](https://github.com/SSU-CAR/SSU-CAR_Embeded/assets/107911398/f5f10145-ed10-4ec9-9722-8f5671cca517)
 
 ## 트러블 슈팅
