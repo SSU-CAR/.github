@@ -50,6 +50,10 @@ https://github.com/SSU-CAR/.github/assets/70098708/da9842e9-05d1-4aa0-b273-bea88
 <img src="https://img.shields.io/badge/GithubActions-2088FF?style=flat&logo=githubactions&logoColor=white"/> 
 ### Back
 <img src="https://img.shields.io/badge/Spring-6DB33F?style=flat&logo=Spring&logoColor=white"/>
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=MySQL&logoColor=white"/>
+<img src="https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white"/>
+<img src="https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=Postman&logoColor=white"/>
+<img src="https://img.shields.io/badge/GithubActions-2088FF?style=flat&logo=githubactions&logoColor=white"/>
 ### Embedded
 ![ROS2](https://img.shields.io/badge/ros-foxy-444444?style=flat&logo=ros)
 ![Python](https://img.shields.io/badge/Python-444444?style=flat&logo=Python)
