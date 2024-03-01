@@ -49,7 +49,9 @@ https://github.com/SSU-CAR/.github/assets/70098708/da9842e9-05d1-4aa0-b273-bea88
 <img src="https://img.shields.io/badge/Typescript-3178C6?style=flat&logo=typescript&logoColor=white"/> <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=white"/> <img src="https://img.shields.io/badge/chart.js-FF6384?style=flat&logo=chartdotjs&logoColor=white"/> <img src="https://img.shields.io/badge/Styled Components-DB7093?style=flat&logo=styled-components&logoColor=white"/> <img src="https://img.shields.io/badge/S3-569A31?style=flat&logo=amazons3&logoColor=white"/>
 <img src="https://img.shields.io/badge/GithubActions-2088FF?style=flat&logo=githubactions&logoColor=white"/> 
 ### Back
-<img src="https://img.shields.io/badge/Spring-6DB33F?style=flat&logo=Spring&logoColor=white"/> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=MySQL&logoColor=white"/> <img src="https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white"/> <img src="https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=Postman&logoColor=white"/> <img src="https://img.shields.io/badge/GithubActions-2088FF?style=flat&logo=githubactions&logoColor=white"/>
+<img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=flat&logo=openjdk&logoColor=white"/> <img src="https://img.shields.io/badge/spring-%236DB33F.svg?style=flat&logo=spring&logoColor=white"/> <img src="https://img.shields.io/badge/mysql-%2300f.svg?style=flat&logo=mysql&logoColor=white"/> <img src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat&logo=amazon-aws&logoColor=white"/> <img src="https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white"/> <img src="https://img.shields.io/badge/GithubActions-2088FF?style=flat&logo=githubactions&logoColor=white"/> 
+
+
 ### Embedded
 ![ROS2](https://img.shields.io/badge/ros-foxy-444444?style=flat&logo=ros)
 ![Python](https://img.shields.io/badge/Python-444444?style=flat&logo=Python)
@@ -71,3 +73,21 @@ LaeDetection, lane_ex - Lane detetction with HSV(HSL) filtering.
 
 
 ## 트러블 슈팅
+### AWS 배포 과정에서 에러 (서버 다운)
+
+#### **문제 상황** : EC2 인스턴스로 배포, codedeploy와 Github Actions로 배포 자동화해서 사용하던중 서버 갑자기 느려짐-> 다운됨
+
+#### 원인➀ : EC2 인스턴스 재부팅 시 CodeDeploy 꺼짐
+  * EC2 인스턴스에 빌드파일, 실행중인 8080 포트 없음 확인
+  * `systemctl enable codedeploy-agent` : 재부팅 시 꺼지는 CodeDeploy 자동으로 켜지게 설정
+
+#### 원인② 인스턴스 내 MySQL 메모리 과부하
+  * EC2 인스턴스에는 mysqld 필요 없는데 계속 실행하면서 메모리 과부하 발생
+  * `systemctl disable mysqld` : 인스턴스 재부팅 시에도 자동으로 mysqld 안켜지게 설정
+  * swap memory 로 메모리 확보
+    * `sudo dd if=/dev/zero of=/swapfile bs=128M count=16`
+    * `sudo chmod 600/swapfile`
+    * `sudo swapon /swapfile`
+    * `sudo swapon -s`
+    * `sudo vi /etc/fstab` : 메모리 남은거 확인
+
