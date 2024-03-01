@@ -55,7 +55,6 @@ https://github.com/SSU-CAR/.github/assets/70098708/da9842e9-05d1-4aa0-b273-bea88
 ![Python](https://img.shields.io/badge/Python-444444?style=flat&logo=Python)
 ![Docker](https://img.shields.io/badge/Docker-444444?style=flat&logo=Docker)
 ![C++](https://img.shields.io/badge/C++-444444?style=flat&logo=c%2B%2B)
-![Python](https://img.shields.io/badge/Python-444444?style=flat&logo=Python)
 
 ## 🧐 상황 판단 알고리즘 구현
 #### Detail information in this link: [Here](https://github.com/SSU-CAR/SSU-CAR_Embeded)
