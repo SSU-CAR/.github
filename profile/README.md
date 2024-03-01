@@ -81,7 +81,7 @@ LaeDetection, lane_ex - Lane detetction with HSV(HSL) filtering.
   * EC2 인스턴스에 빌드파일, 실행중인 8080 포트 없음 확인
   * `systemctl enable codedeploy-agent` : 재부팅 시 꺼지는 CodeDeploy 자동으로 켜지게 설정
 
-#### 원인② 인스턴스 내 MySQL 메모리 과부하
+#### 원인② : 인스턴스 내 MySQL 메모리 과부하
   * EC2 인스턴스에는 mysqld 필요 없는데 계속 실행하면서 메모리 과부하 발생
   * `systemctl disable mysqld` : 인스턴스 재부팅 시에도 자동으로 mysqld 안켜지게 설정
   * swap memory 로 메모리 확보
