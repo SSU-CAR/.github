@@ -1,8 +1,15 @@
 # 안전운전 피드백 서비스
 ### 🚘 현대모비스 2024 Mobility SW HACKATHON 
 > **2024.01.18~2024.02.23**
-> 
-> Frontend [@jwo0o0](https://github.com/jwo0o0) Backend [@0woogie](https://github.com/0woogie) [@Seohyun Back](https://github.com/Seohyun-Back) Embedded[
+
+
+## 👥 팀 소개
+|![김정우](https://github.com/jwo0o0.png)|![맹영욱](https://github.com/0woogie.png)|![백서현](https://github.com/Seohyun-Back.png)|![김병지](https://github.com/byungjikim.png)|
+|:---:|:---:|:---:|:---:|
+|[김정우](https://github.com/jwo0o0)|[맹영욱](https://github.com/0woogie)|[백서현](https://github.com/Seohyun-Back)|[김병지](https://github.com/byungjikim)|
+|Frontend|Backend|Backend|Embedded|
+
+Frontend [@jwo0o0](https://github.com/jwo0o0) Backend [@0woogie](https://github.com/0woogie) [@Seohyun Back](https://github.com/Seohyun-Back) Embedded[
 @byungjikim](https://github.com/byungjikim)
 
 ## 📌 프로젝트 소개
